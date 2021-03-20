@@ -1,6 +1,6 @@
 # Network Services
 ## Introduction
-This is a write-up for the TryHackMe Network Services room. I will walk through tasks 3 & 4. I will be using using Kali VM for this write-up. Lets get Started!
+This is a write-up for the TryHackMe Network Services room. I will walk through tasks 3 & 4. Lets get Started!
 
 In this room you learn about, then enumerate and exploit a variety of network services and misconfigurations. The tasks mentioned above will go through the enumerating and exploiting processes.
 
