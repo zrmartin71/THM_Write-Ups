@@ -1,13 +1,13 @@
 # Network Services
 ## Introduction
-This is a write-up for the TryHackMe Network Services room. I will walk through tasks 3 & 4. Lets get Started!
+This is a write-up for the TryHackMe Network Services room. I will walk through tasks 3 & 4. Let's get started!
 
 In this room you learn about, then enumerate and exploit a variety of network services and misconfigurations. The tasks mentioned above will go through the enumerating and exploiting processes.
 
 Link to the room: https://tryhackme.com/room/networkservices
 <!--- This is a comment -->
 ## [Task 3] Enumerating SMB
-1.) Conduct an nmap scan of your choosing, How many ports are open?
+1.) Conduct a nmap scan of your choosing, How many ports are open?
 
 I scanned ports 1-3000 for time, but you can scan however many you want.
 ![image](https://user-images.githubusercontent.com/54414820/111885198-b33db000-899c-11eb-8cc0-e12e058ea78f.png)
@@ -18,9 +18,9 @@ You can see that there are 3 open ports. Ports 22, 139, and 445. So, the answer 
 
 2.) What ports is SMB running on?
 
-Now run the nmap scan again, but this time add the -A option. The **-A** option allows you to enables OS detection, version detection, script scanning, and traceroute.
+Now run the nmap scan again, but this time add the -A option. The **-A** option allows you to enable OS detection, version detection, script scanning, and traceroute.
 
- You don't have to scan the same number of ports you scanned last time. Ports 1-500 should be sufficant for this part.
+ You don't have to scan the same number of ports you scanned last time. Ports 1-500 should be sufficient for this part.
 
 ![image](https://user-images.githubusercontent.com/54414820/111885667-a2db0480-899f-11eb-9ff0-75e468166734.png)
 
@@ -28,7 +28,7 @@ You can see based on the version section that ports 139 and 445 are running on S
 
 3.) Let's get started with Enum4Linux, conduct a full basic enumeration. For starters, what is the workgroup name? 
 
-Use the command layed out for your with the -A option. You should get a output similar to the one below.
+Use the command laid out for you with the -A option. You should get an output similar to the one below.
 
 ![image](https://user-images.githubusercontent.com/54414820/111885920-f863e100-89a0-11eb-82f7-6356d6b29f2f.png)
 
@@ -36,7 +36,7 @@ Answer: WORKGROUP
 
 4.) What comes up as the name of the machine?
 
-On this part assumed that the name of the machine was POLOSMB based on the information provided in the OS Information section. Theres probably a better way to find this, but this worked for me.
+This part assumed that the name of the machine was POLOSMB based on the information provided in the OS Information section. There's probably a better way to find this, but this worked for me.
 
 ![image](https://user-images.githubusercontent.com/54414820/111886411-ac666b80-89a3-11eb-9b06-33195aa82392.png)
 
@@ -58,11 +58,11 @@ Answer: profiles
 
 Answer: smbclient //10.10.10.2/secret -U suit -p 445
 
-2.) Great! Now you've got a hang of the syntax, let's have a go at trying to exploit this vulnerability. You have a list of users, the name of the share (smb) and a suspected vulnerability.
+2.) Great! Now you've got a hang of the syntax, let's have a go at trying to exploit this vulnerability. You have a list of users, the name of the share (smb), and a suspected vulnerability.
 
 Answer: No answer needed
 
-3.) Lets see if our interesting share has been configured to allow anonymous access, I.E it doesn't require authentication to view the files. We can do this easily by:
+3.) Let's see if our interesting share has been configured to allow anonymous access, I.E it doesn't require authentication to view the files. We can do this easily by:
 
 - using the username "Anonymous"
 
