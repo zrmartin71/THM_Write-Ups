@@ -108,7 +108,7 @@ Answer: .ssh
 
 7.) This directory contains authentication keys that allow a user to authenticate themselves on, and then access, a server. Which of these keys is most useful to us?
 
-Reconnect to the target and and **cd** to the .ssh directory. Then use the **ls** command to view whats in the directory.
+Reconnect to the target and **cd** to the .ssh directory. Then use the **ls** command to view whats in the directory.
 
 ![image](https://user-images.githubusercontent.com/54414820/111887534-03703e80-89ac-11eb-814e-d469463c94bd.png)
 
