@@ -18,7 +18,7 @@ You can see that there are 3 open ports. Ports 22, 139, and 445. So, the answer 
 
 2.) What ports is SMB running on?
 
-Now run the nmap scan again, but this time add the -A option. The **-A** option allows you to enable OS detection, version detection, script scanning, and traceroute.
+Now run the nmap scan again, but this time add the **-A** option. The **-A** option allows you to enable OS detection, version detection, script scanning, and traceroute.
 
  You don't have to scan the same number of ports you scanned last time. Ports 1-500 should be sufficient for this part.
 
