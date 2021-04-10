@@ -1,4 +1,4 @@
-This is a write-up for the TryHackMe Network Services room. I will walk through tasks 9 & 10. I will be using using Kali VM for this write-up. Lets get Started!
+This is a write-up for the TryHackMe Network Services room. I will walk through tasks 9 & 10. I will be using Kali VM for this write-up. Let's get started!
 
 In this room you learn about, then enumerate and exploit a variety of network services and misconfigurations. The tasks mentioned above will go through the enumerating and exploiting FTP (File Transfer Protocol).
 
@@ -6,13 +6,13 @@ Link to the room: https://tryhackme.com/room/networkservices
 
 ## [Task 9]  Enumerating FTP
 
-Run an nmap scan of your choice.
+Run a nmap scan of your choice.
 
 I decided to run this command:
 
 ![image](https://user-images.githubusercontent.com/54414820/114281387-1787e880-9a0c-11eb-8114-0b32046ab379.png)
 
-I didn't need all of the output that this scan did, but I like this output format because it gave me everything I needed in one command. I learned how to do this type command from earlier machines in this room.
+I didn't need all of the output that this scan did, but I like this output format because it gave me everything I needed in one command. I learned how to do this type of command from earlier machines in this room.
 
 Below is a table of each option and what they do.
 
@@ -23,7 +23,7 @@ Below is a table of each option and what they do.
 |   **-T4**	|  Set timing template (higher is faster) *range from 0-5*	|
 ||	|
 
-*You can also view what all of these do by using the man command or namp -h. I just put it here for convience.*
+*You can also view what all of these do by using the man command or nmap -h. I just put it here for convenience.*
 
 1.) How many ports are open on the target machine? 
 
@@ -69,7 +69,7 @@ Use the **get** command to send the PUBLIC_NOTICE.txt file to your machine and e
 
 1.) What is the password for the user "mike"?
 
-Run they hydra command laid out for you in the description. You should have an output similar to the one below.
+Run the hydra command laid out for you in the description. You should have an output similar to the one below.
 
 **Don't forget to change dale in the example to mike and the ip to the ip of your attack machine.**
 
