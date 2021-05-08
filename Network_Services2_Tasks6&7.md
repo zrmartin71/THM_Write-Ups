@@ -2,7 +2,7 @@
 ## Introduction
 This is a write-up for the TryHackMe Network Services 2 room. I will walk through tasks 6 & 7. I will be using Kali VM for this write-up. Let's get started!
 
-In this room you learn about, then enumerate and exploit a variety of network services and misconfigurations. The tasks mentioned above will go through the enumerating and exploiting processes.
+In this room you learn about, then enumerate and exploit a variety of network services and misconfigurations. The tasks mentioned above will go through the enumerating and exploiting SMTP.
 
 Link to the room: https://tryhackme.com/room/networkservices2
 
