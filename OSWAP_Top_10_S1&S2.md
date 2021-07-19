@@ -1,4 +1,4 @@
-# OSWAP Top 10
+# OWASP Top 10
 ## Introduction
 
 This is a write-up for the TryHackMe OSWAP Top 10 room. I will walk through severities 1 & 2. I will be using Kali VM for this write-up. Let's get started!
