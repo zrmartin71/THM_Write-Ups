@@ -1,7 +1,7 @@
 # OWASP Top 10
 ## Introduction
 
-This is a write-up for the TryHackMe OSWAP Top 10 room. I will walk through severities 3 & 4. I will be using the built-in THM attack machine for this write-up. Let's get started!
+This is a write-up for the TryHackMe OWASP Top 10 room. I will walk through severities 3 & 4. I will be using the built-in THM attack machine for this write-up. Let's get started!
 
 In this room, you learn about web app vulnerabilities and how to exploit them. The tasks mentioned above will go through sensitive data exposure and XML external entity.
 
